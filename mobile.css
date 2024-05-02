@@ -1,0 +1,52 @@
+/* 基本样式，适用于所有设备 */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+input[type="text"], button {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.poem-display {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fde8ec;
+    border-radius: 5px;
+    display: none;
+}
+
+/* 媒体查询，针对平板电脑和手机调整布局 */
+@media (max-width: 768px) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    input[type="text"], button {
+        width: auto;
+    }
+}
+
+/* 针对手机的更细致的调整 */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
